@@ -4,7 +4,7 @@ public class Reto8 {
     public static void main(String[] args) throws Exception {
 
         int docident,tipodoc,fechanaci,edad,otro=1, Registro;
-        String nombre,pais,ciudad;
+        String nombre,pais,ciudad, auxilio;
 
         //numident1=123456,numident2=678901,numident3=102866//
         //clave=12309,clave2=190238,clave3=908765//
@@ -121,6 +121,9 @@ public class Reto8 {
         System.out.println("Ingrese La Ciudad Donde Vive");
         ciudad=lectura.next();
 
+        System.out.println("Ingrese El Auxilio Al Cual Espera Recibir");
+        auxilio=lectura.next();
+
 
         System.out.println("Su Nombre Es: "+nombre);
         System.out.println("Su Edad Es: "+edad);
@@ -128,8 +131,10 @@ public class Reto8 {
         System.out.println("La Fecha De Nacimeinto Es: "+fechanaci);
         System.out.println("Su Pais Es: "+pais);
         System.out.println("Su Ciudad Es: "+ciudad);
+
+        System.out.println("El Auxilio Al Que Aspira Es: "+auxilio);
          }
-        
+
         System.out.println("Desea Registrar Otro Usuario? 1=Si 0=No");
         otro=lectura.nextInt();
     }

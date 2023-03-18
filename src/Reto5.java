@@ -3,8 +3,18 @@ import java.util.Scanner;
 
 public class Reto5 {
     //Caja Registradora
+/* 
+    numero empleado= 123456
+    clave1= 908765
+
+    numero empleado 2= 67890
+    clave 2= 12309
+
+    numero empleado 3= 102866
+    clave 3= 190238
+    */
     public static void main(String[] args) throws Exception {
-    int numeroemp,numreg,numerovent,edad,regisemp, total,metodopag; 
+    int numeroemp,numreg,numerovent,edad,regisemp, total,metodopag,clave; 
     double numtran;   
     String nombreemp;
 
@@ -16,20 +26,43 @@ public class Reto5 {
     System.out.println("Se Encuentra Registradro?, 1=Si, 2=No");
     regisemp=lectura.nextInt();
 
-    switch(regisemp){
-        case 1:{
-            System.out.println("Estas Registrado, Bienvenido Al Sistema");
-        }
-        break;
+    if(regisemp==1){
 
-        case 2:{
+        System.out.println(" Ingrese Numero De Documento");
+        numeroemp=lectura.nextInt();
+
+        if(numeroemp==123456){
+            System.out.println("Ingrese Su Contraseña");
+            clave=lectura.nextInt();
+
+            if(clave==908765){
+                System.out.println("Bienvenido Al Sistema");
+            }
+
+        }else if(numeroemp==67890){
+            System.out.println("Ingrese Su Contraseña");
+            clave=lectura.nextInt();
+            if(clave==12309){
+                System.out.println("Bienvenido Al Sistema");
+            }
+
+        }else if(numeroemp==102866){
+            System.out.println("Ingrese Su Contraseña");
+            clave=lectura.nextInt();
+            if(clave==190238){
+                System.out.println("Bienvenido Al Sistema");
+
+            }
+
+        } else if(regisemp==0){
+        
             System.out.println("Por Favor llenar La Siguiente Informacion");
 
             Random generator=new Random();
             int numeroempregis= generator.nextInt(1000000000);
 
             System.out.println("Ingrese Su Nombre Completo");
-            nombreemp=lectura.nextLine();
+            nombreemp=lectura.next();
 
             System.out.println("Ingrese Su Edad");
             edad=lectura.nextInt();
@@ -37,12 +70,6 @@ public class Reto5 {
             System.out.println("Su Nombre Es: "+nombreemp);
             System.out.println("Su Edad Es: "+edad);
             System.out.println("El Numero Que Se Le Asigno Es: "+numeroempregis);
-        }
-        break;
-
-        default:{
-            System.out.println("Opcion No Existente Por Favor Volver a Intentar");
-        }
 
     }
             System.out.println("Numero De Registro");
@@ -55,7 +82,7 @@ public class Reto5 {
             numeroemp=lectura.nextInt();
 
             System.out.println("Ingrese Su Nombre");
-            nombreemp=lectura.nextLine();
+            nombreemp=lectura.next();
 
             System.out.println("Ingrese El Total De La Compra");
             total=lectura.nextInt();
@@ -91,8 +118,16 @@ public class Reto5 {
                     System.out.println("El Numero Al Cual Se Hara La Transaccion Es: "+numtran);
 
                     }
+                    break;
+
+                    default:{
+                        System.out.println("Opcion No Existente");
+                    }
+
+                
                 }
-                }
+            }
+        }
 
                 lectura.close();
      }

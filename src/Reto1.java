@@ -15,9 +15,9 @@ public class Reto1 {
     System.out.println("Ingrese la cantidad de personas para la torta");
     Cantpersonas=grados.nextInt();
 
-    G= Math.abs(G*Cantpersonas);
+    G=(G*Cantpersonas);
 
-    Kg= Math.abs(G/kg1);
+    Kg=(G/kg1);
 
     K = C + 273.15;
       

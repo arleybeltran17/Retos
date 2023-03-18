@@ -42,14 +42,14 @@ public class Reto2 {
        System.out.println("Ingrese el mes de nacimiento del BeBe(Tipo fecha)");
        Mesnaci=Dosis.nextInt();
 
-       Anos= Math.abs(Anoact-Anonaci);
-       Meses= Math.abs(Mesact-Mesnaci);
+       Anos=(Anoact-Anonaci);
+       Meses=(Mesact-Mesnaci);
 
-       Dosisvac= Math.abs (Pesobebe+10);
+       Dosisvac=(Pesobebe+10);
        
-       Dosisvac= Math.abs (Meses+10);
+       Dosisvac=(Meses+10);
       
-       Dosisvac= Math.abs (Meses+Pesobebe*8);
+       Dosisvac=(Meses+Pesobebe*8);
        
 
        System.out.println("Nombre del Doctor:"+NombDoc);
